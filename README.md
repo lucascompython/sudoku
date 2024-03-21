@@ -6,6 +6,7 @@
 2. Find the sudoku board in the screenshot
 3. Extract the numbers from the board
 4. Solve the sudoku
+5. Type the solution into the board
 
 ## Build
 
