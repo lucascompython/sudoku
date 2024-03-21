@@ -103,7 +103,6 @@ def type_numbers(
                 sleep(DELAY)
         keyboard.press_and_release("down")
         sleep(DELAY)
-    print("sai")
 
 
 def main():
@@ -113,7 +112,6 @@ def main():
         while True:
             print("Press 'esc' to take a screenshot of the sudoku board")
             keyboard.wait("esc", suppress=True)
-            print("Taking screenshot...")
             predicted_numbers = get_numbers(model)
 
             print("Unsolved board")
