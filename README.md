@@ -15,8 +15,9 @@ cd sudoku
 
 # Install uv https://github.com/astral-sh/uv
 
-# Create virtual environment
+# Create and activate a virtual environment
 uv venv
+source .venv/bin/activate
 
 # Install dependencies
 uv pip sync requirements.txt
