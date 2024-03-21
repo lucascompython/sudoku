@@ -11,6 +11,7 @@ from typing import Any
 
 
 DELAY = 0.1
+BOUNDING_BOX = (380, 580, 900, 1100)
 
 
 def get_perspective(img: MatLike, location, height=900, width=900) -> MatLike:
@@ -60,7 +61,7 @@ def split_boxes(board, input_size: int = 48) -> list:
 
 
 def get_numbers(model) -> np.ndarray:
-    img = pyscreenshot.grab(bbox=(380, 580, 900, 1100))
+    img = pyscreenshot.grab(bbox=BOUNDING_BOX)
     img.save("sudoku.png")
 
     img = cv2.imread("sudoku.png")
