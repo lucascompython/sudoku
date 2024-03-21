@@ -13,7 +13,7 @@
 git clone https://github.com/lucascompython/sudoku
 cd sudoku
 
-# Install uv https://astral.sh/blog/uv
+# Install uv https://github.com/astral-sh/uv
 
 # Create virtual environment
 uv venv
