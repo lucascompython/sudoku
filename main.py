@@ -112,7 +112,10 @@ def main():
     try:
         while True:
             print("Press 'esc' to take a screenshot of the sudoku board")
-            keyboard.wait("esc", suppress=True)
+            while True:
+                if keyboard.is_pressed("esc"):
+                    break
+                sleep(0.1)
             predicted_numbers = get_numbers(model)
 
             print("Unsolved board")
