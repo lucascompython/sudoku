@@ -17,12 +17,16 @@ cd sudoku
 
 # Create and activate a virtual environment
 uv venv
+
 source .venv/bin/activate
+# Or
+.\.venv\Scripts\Activate.ps1
 
 # Install dependencies
 uv pip sync requirements.txt
 
 # Run
-maturin build
-python main.py
+./develop.sh
+# Or
+./develop.ps1
 ```
