@@ -108,7 +108,6 @@ def type_numbers(
 
 def main():
     model = load_model("model-OCR.h5")
-    from time import perf_counter
 
     try:
         while True:
@@ -119,23 +118,8 @@ def main():
 
             print("Unsolved board")
             sudoku.print_board(predicted_numbers)
-            board = [
-                [2, 0, 1, 8, 4, 0, 0, 6, 0],
-                [0, 0, 0, 0, 6, 0, 9, 0, 0],
-                [0, 0, 5, 0, 0, 0, 0, 0, 0],
-                [0, 0, 0, 0, 0, 7, 0, 0, 3],
-                [8, 0, 6, 1, 0, 0, 0, 9, 0],
-                [0, 4, 0, 0, 0, 0, 0, 0, 0],
-                [0, 9, 0, 4, 0, 0, 0, 0, 0],
-                [0, 5, 0, 0, 0, 0, 0, 2, 0],
-                [4, 0, 2, 0, 0, 1, 7, 0, 0],
-            ]
-            start = perf_counter()
+
             solved_board = sudoku.solve(predicted_numbers)
-            end = perf_counter()
-            print(f"Solved in {end - start} seconds")
-            # 0.00026031700008388725
-            # exit(0)
             print("\nSolved board")
             sudoku.print_board(solved_board)
 
