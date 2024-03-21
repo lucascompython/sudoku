@@ -46,8 +46,7 @@ def find_board(img: MatLike) -> tuple[MatLike, MatLike | Any]:
     return result, location
 
 
-# split the board into 81 individual images
-def split_boxes(board, input_size: int = 48) -> list:
+def split_boxes(board: MatLike, input_size: int = 48) -> list:
     """Takes a sudoku board and split it into 81 cells.
     each cell contains an element of that board either given or an empty cell."""
     rows = np.vsplit(board, 9)
@@ -85,10 +84,9 @@ def get_numbers(model) -> np.ndarray:
 
 
 def type_numbers(
-    original_board: list[list[int]], solved_board: list[list[int]]
+    original_board: list[list[int]] | np.ndarray,
+    solved_board: list[list[int]] | np.ndarray,
 ) -> None:
-    """Takes a solved board and type the numbers in the sudoku board"""
-
     for even, i in enumerate(range(9)):
         if even % 2 == 0:
             for j in range(9):
@@ -106,7 +104,7 @@ def type_numbers(
         sleep(DELAY)
 
 
-def main():
+def main() -> None:
     model = load_model("model-OCR.h5")
 
     try:
