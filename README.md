@@ -29,4 +29,6 @@ uv pip sync requirements.txt
 ./develop.sh
 # Or
 ./develop.ps1
+
+# Adjust the screen capture area if needed
 ```
