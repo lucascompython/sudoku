@@ -1,5 +1,12 @@
 # Sudoku Solver for [sudoku.com](https://sudoku.com)
 
+
+## Demo
+
+
+
+
+
 ## How does it work?
 
 1. Take a screenshot of the sudoku board
