@@ -2,7 +2,7 @@
 
 ## Demo
 
-https://raw.githubusercontent.com/lucascompython/sudoku/main/demo.mp4
+https://github.com/lucascompython/sudoku/assets/77930083/213bece2-03c5-4f03-a2d2-00b802fcebba
 
 ## How does it work?
 
