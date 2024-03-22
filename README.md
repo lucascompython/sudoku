@@ -1,11 +1,8 @@
 # Sudoku Solver for [sudoku.com](https://sudoku.com)
 
-
 ## Demo
 
-
-
-
+https://raw.githubusercontent.com/lucascompython/sudoku/main/demo.mp4
 
 ## How does it work?
 
